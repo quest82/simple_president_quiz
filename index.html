@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personal | Simple President Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title">Welcome To The President Quiz</h1>
+		</header>
+
+		<main class="quiz">
+			<section class="quiz__resultSection">
+				<p class="quiz__resultSection__result">
+					Your score is <span class="quiz__resultSection__result__score"> 0%</span>
+				</p>
+			</section>
+			<form action="" class="quiz__form">
+				<div class="quiz__form__q1 quiz__form__q">
+					<p class="quiz__form__q1__question quiz__form__question">
+						<span class="quiz__form__question__no">1.</span> Who is the current President Of Nigeria?
+					</p>
+					<div class="quiz__form__q1__optionA">
+						<input
+							type="radio"
+							name="question1"
+							value="Muhammadu Buhari"
+							id="radio_1"
+						/>
+						<label for="radio_1">Muhammadu Buhari</label>
+					</div>
+					<div class="quiz__form__q1__optionB">
+						<input
+							type="radio"
+							name="question1"
+							value="Bola Ahmed Tinubu"
+							id="radio_2"
+						/>
+						<label for="radio_2">Bola Ahmed Tinubu</label>
+					</div>
+				</div>
+
+				<div class="quiz__form__q2 quiz__form__q">
+					<p class="quiz__form__q2__question quiz__form__question">
+						<span class="quiz__form__question__no">2.</span> Who is the current President Of U.S.A?
+					</p>
+					<div class="quiz__form__q2__optionA">
+						<input
+							type="radio"
+							name="question2"
+							value="Donald Trump"
+							id="radio_3"
+						/>
+						<label for="radio_3">Donald Trump</label>
+					</div>
+					<div class="quiz__form__q2__optionB">
+						<input
+							type="radio"
+							name="question2"
+							value="Joe Biden"
+							id="radio_4"
+						/>
+						<label for="radio_4">Joe Biden</label>
+					</div>
+				</div>
+
+				<div class="quiz__form__q3 quiz__form__q">
+					<p class="quiz__form__q3__question quiz__form__question">
+						<span class="quiz__form__question__no">3.</span> Who is the current Prime Minister of Britain?
+					</p>
+					<div class="quiz__form__q3__optionA">
+						<input
+							type="radio"
+							name="question3"
+							value="Rishi Sunak"
+							id="radio_5"
+						/>
+						<label for="radio_5">Rishi Sunak</label>
+					</div>
+					<div class="quiz__form__q3__optionB">
+						<input
+							type="radio"
+							name="question3"
+							value="Keir Starmer"
+							id="radio_6"
+						/>
+						<label for="radio_6">Keir Starmer</label>
+					</div>
+				</div>
+
+				<div class="quiz__form__q4 quiz__form__q">
+					<p class="quiz__form__q4__question quiz__form__question">
+						<span class="quiz__form__question__no">4.</span> Who is the current Prime Minister of Canada?
+					</p>
+					<div class="quiz__form__q4__optionA">
+						<input
+							type="radio"
+							name="question4"
+							value="Mark Carney"
+							id="radio_7"
+						/>
+						<label for="radio_7">Mark Carney</label>
+					</div>
+					<div class="quiz__form__q4__optionB">
+						<input
+							type="radio"
+							name="question4"
+							value="Justin Trudeau"
+							id="radio_8"
+						/>
+						<label for="radio_8">Justin Trudeau</label>
+					</div>
+				</div>
+
+                <input type="submit" value="Submit" class="btn">
+			</form>
+		</main>
+	</body>
+</html>
