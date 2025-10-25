@@ -102,7 +102,7 @@ GLOBAL
 
 body {
 	background-color: var(--background);
-	margin-top: 3em;
+	margin: 3em 1em 0 1em;
 	font-family: var(--fnt-fam);
 	font-size: 1.15rem;
 }
@@ -160,7 +160,13 @@ TYPOGRAPHY
 ASSET
 */
 
-.btn {
+.btn,
+.retryBtn {
 	margin-bottom: 1em;
     padding: .5em 1em;
+}
+
+
+.retryBtn {
+	display: none;
 }

@@ -3,6 +3,8 @@
 const form = document.querySelector(".quiz__form");
 const result = document.querySelector(".quiz__resultSection__result");
 const score = document.querySelector(".quiz__resultSection__result__score");
+const submitBtn = document.querySelector(".btn");
+const retryBtn = document.querySelector(".retryBtn");
 
 // ANSWERS
 
@@ -40,6 +42,20 @@ form.addEventListener("submit", (e) => {
 	result.style.display = "block";
 	scoreCountDown(scoreCounter);
 	scrollTo(0, 0);
+
+	retryBtn.style.display = "block";
+	submitBtn.style.display = "none";
+	setTimeout(() => {
+		alert("Try again by clicking the button below");
+	}, 2000);
+});
+
+retryBtn.addEventListener("click", (e) => {
+	form.reset();
+	scrollTo(0, 0);
+
+	retryBtn.style.display = "none";
+	submitBtn.style.display = "block";
 });
 
 // FUNCTIONS
@@ -53,5 +69,5 @@ function scoreCountDown(scoreCounter) {
 			countDown++;
 			score.textContent = `${countDown}%`;
 		}
-	}, 20);
+	}, 2);
 }
